@@ -1,5 +1,11 @@
+import Hero from "@/components/Hero"
+import MoreInfo from "@/components/More-info"
+
 export default function Home() {
   return (
-    <h1 className="text-xl">Hellow World</h1>
+    <>
+      <Hero />
+      <MoreInfo />
+    </>
   )
 }
