@@ -1,16 +1,16 @@
 const links = [
   // { name: '', href: '#' },
   // { name: 'Internship program', href: '#' },
-  { name: 'More Info', href: '#' },
-  { name: 'About us', href: '#' },
+  { name: "More Info", href: "#" },
+  { name: "About us", href: "#" },
   // { name: 'Contact us', href: '#' },
-]
+];
 const stats = [
   // { name: 'Offices worldwide', value: '12' },
   // { name: 'Full-time colleagues', value: '300+' },
-  { name: 'Clientes Satisfechos', value: '15+' },
-  { name: 'Posibilidades de obtener clientes', value: '50%+' },
-]
+  { name: "Clientes Satisfechos", value: "15+" },
+  { name: "Posibilidades de obtener clientes", value: "50%+" },
+];
 
 export default function Hero() {
   return (
@@ -70,7 +70,9 @@ export default function Hero() {
       </svg>
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
         <div className="max-w-2xl mx-auto lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Maweb: Arquitectos Concidos</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            Hola
+          </h2>
           <p className="mt-6 text-lg leading-8 text-gray-300">
             Rechazanos, el 50% de arquitectos desconocidos ya lo hicieron
           </p>
@@ -86,13 +88,17 @@ export default function Hero() {
           <dl className="grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse">
-                <dt className="text-base leading-7 text-gray-300">{stat.name}</dt>
-                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">{stat.value}</dd>
+                <dt className="text-base leading-7 text-gray-300">
+                  {stat.name}
+                </dt>
+                <dd className="text-2xl font-bold leading-9 tracking-tight text-white">
+                  {stat.value}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
       </div>
     </div>
-  )
+  );
 }
